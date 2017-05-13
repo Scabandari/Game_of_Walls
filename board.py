@@ -15,7 +15,6 @@ class Board:
     def update_square(self, row, col, str_param):
         self.game_board[row][col] = str_param
 
- #   def reset_board(self):
- #       for i in range(self.width-1):
-  #          for j in range(self.width-1):
-  #              board.game_board[i][j] = 'OO'
+    def get_square(self, row, col):
+        str_ = self.game_board[row][col]
+        return str_
