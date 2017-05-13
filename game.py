@@ -24,7 +24,7 @@ class Game:
 
     def execute_match(self):
         i = 0
-        while (self.player_1.moves_since_point < 6 or self.player_2.moves_since_point < 6) and\
+        while (self.player_1.moves_since_point < 6 or self.player_2.moves_since_point < 6) and \
                         (self.player_1.score + self.player_2.score) < self.board.width:
             if i % 2 == 0:
                 self.player_1.make_move()
